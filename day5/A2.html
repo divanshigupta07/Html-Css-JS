@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="A2.css">
+</head>
+<body>
+    <form action="https://relinns.sample.api/submit-form" method="post">
+    <table>
+        <tr>
+            <th colspan="2">Registration Form</th>
+        </tr>
+        <tr>
+            <td>Enter Name:</td>
+            <td><input type="text" name="firstname" /></td>
+        </tr>
+        <tr>
+            <td>Enter Password:</td>
+            <td><input type="password" name="password" /></td>
+        </tr>
+        <tr>
+            <td>Enter address:</td>
+            <td><textarea name="address" id="address" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td>Select Game:</td>
+            <td>
+                <input type="checkbox" name="Hockey" id="Hockey">Hockey <br>
+                <input type="checkbox" name="Football" id="Football">Football <br>
+                <input type="checkbox" name="Badminton" id="Badminton">Badminton <br>
+                <input type="checkbox" name="Cricket" id="Cricket">Cricket <br>
+                <input type="checkbox" name="Volleyball" id="Volleyball">Volleyball <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender" id="male">Male <br>
+                <input type="radio" name="gender" id="female">Female <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Select your Age:</td>
+            <td>
+                <select name="age" id="age">
+                    <option value="Select">Select</option>
+                    <option value="below18">Below 18</option>
+                    <option value="19">18-30</option>
+                    <option value="30">30-50</option>
+                    <option value="above 50">Above 50</option>
+                </select>
+        </tr>
+        <tr>
+            <td>Select Photo:</td>
+            <td><input type="file" name="photo" /></td>
+        </tr>
+        <tr >
+            <td colspan="2" class="Submit">
+                <button>Click Me</button>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color: #333333;
+    text-align: center;
+    font: bold 56px Arial, sans-serif;
+    /* border: 10px dotted black; */
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+ul {
+    list-style-type: none;
+    margin: 10px;
+    font-size: larger;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    padding: 0 50px;
+}
+span {
+    display: block;
+    margin: 10px;
+    position: relative;
+    left: 200px;
+    /* position: fixed;
+    left: 100px;
+    top: 50px;
+    width: 500px;
+    height: 400px;
+    background-color: lightcoral;
+    border: 2px solid black; */
+}
+p {
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    /* border: #333333 2px dashed; */
+    /* clear: right; */
+}
+
+.container {
+  position: relative;
+  width: 40%;
+  border: 3px solid green;
+}
+.container::after {
+    content: "";
+    clear: both;
+    display: flow-root;
+}
+.bottom {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+img {
+    width: 40%;
+    height: auto;
+    opacity: 0.5;
+    float: right;
+}
+img:hover{
+  opacity: 0.8;
+  width: 110%;
+}
+img:hover + .bottom {
+    color: rgb(14, 9, 9);
+    font-size: 52px;
+
+}
+
+.abs{
+    border: 2px red solid;
+    height: 100px;
+    position: relative;
+    top: 10px;
+}
+.positioning {
+    border: #333333 2px dashed;
+    position: absolute;
+    top: 20px;
+    left:100px
+}
+.fixed{
+    border: #333333 2px groove;
+    position: absolute;
+    right: 200px;
+}

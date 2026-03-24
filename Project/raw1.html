@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.1.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="raw1.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-white px-5 py-4" id="Navbar">
+        <div class="container-fluid" id="Navbar1">
+            <a class="navbar-brand fw-bold " href="#" title="Dribble: the community of designers"><svg xmlns="http://www.w3.org/2000/svg" width="76" height="30" viewBox="0 0 210 59" fill="none">
+                    <title>Dribbble: the community for graphic design</title>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M206.622 31.928C207.065 31.4116 207.85 31.4352 208.253 31.986H208.25L209.784 34.0834C210.075 34.4864 210.073 35.0425 209.769 35.4349C207.106 38.8893 202.44 42.2143 196.81 42.5359C192.366 42.7887 188.701 41.1051 186.706 37.9221C186.311 37.2925 185.44 37.2557 184.997 37.8511C182.63 41.0286 179.766 43.5134 176.782 43.6845C171.467 43.9876 169.966 40.4228 171.28 32.563C171.412 31.7805 170.726 31.1192 169.987 31.3141C168.885 31.6065 167.715 31.7356 166.528 31.633C166.034 31.5907 165.571 31.8912 165.422 32.3811C163.455 38.8418 158.774 44.8518 152.715 45.1997C148.847 45.421 143.069 43.205 143.647 33.9462C143.695 33.1927 143.019 32.5999 142.323 32.8106C141.11 33.1795 139.804 33.3534 138.474 33.2401C137.981 33.1979 137.52 33.4983 137.371 33.9885C135.404 40.449 130.723 46.4592 124.664 46.8068C120.796 47.0282 115.018 44.8124 115.596 35.5536C115.644 34.7998 114.968 34.207 114.272 34.418C113.059 34.7869 111.753 34.9634 110.423 34.8473C109.93 34.8053 109.469 35.1057 109.32 35.5956C107.352 42.0564 102.672 48.0664 96.6132 48.4142C93.8613 48.5723 90.1398 47.4945 88.4308 43.5264C88.1016 42.7599 87.1144 42.6438 86.6257 43.3105C84.2334 46.5751 81.3193 49.152 78.2762 49.3259C75.1571 49.505 73.4509 48.2535 72.7091 46.0216C72.4458 45.2339 71.4609 45.0467 70.9293 45.6712C68.8002 48.1744 66.3749 50.0082 63.9216 50.1479C60.1393 50.3666 57.9619 47.563 57.7823 44.1667C57.5747 40.204 59.2887 35.564 61.2025 30.4999C61.4684 29.7964 60.9873 29.0348 60.2608 29.0032C59.157 28.956 57.8963 28.8399 56.7113 28.6185C56.1771 28.5159 55.6583 28.8479 55.5063 29.3907C53.243 37.4716 49.7771 45.392 46.8529 50.074C46.5263 50.5984 45.8505 50.7381 45.3593 50.377L43.1264 48.7331C42.6682 48.393 42.5441 47.7397 42.8504 47.247C47.0759 40.478 50.8278 29.8807 52.1215 22.0421C52.2025 21.5415 52.61 21.17 53.0986 21.141L56.0683 20.9697C56.7493 20.9302 57.2861 21.5652 57.162 22.2634L57.1493 22.3372C57.0379 22.959 57.4532 23.5439 58.0532 23.6257C60.7164 23.992 64.6963 24.0366 67.3975 23.9313C68.157 23.9023 68.6938 24.6875 68.4178 25.4226C66.2507 31.1876 63.3469 39.1765 63.5139 42.3382C63.5899 43.7662 64.2204 44.5462 65.3291 44.4829C67.4508 44.3619 70.7141 40.0959 73.1876 35.3455C73.2331 35.261 73.2659 35.169 73.2862 35.0741C74.1196 31.3543 75.3565 27.2068 76.6061 23.0163L76.6837 22.7561C76.8128 22.3188 77.1901 22.0131 77.6306 21.9868L81.1876 21.7839C81.9219 21.7417 82.4712 22.4795 82.2485 23.2093C82.0654 23.8112 81.883 24.409 81.7023 25.0014C78.5723 35.2603 75.9438 43.8759 79.4838 43.6742C81.7978 43.5422 85.0764 39.6164 87.8966 34.0279C87.9421 33.9356 87.9751 33.8381 87.9954 33.7355C88.1372 33.0055 88.3092 32.2416 88.5195 31.4432C90.1639 24.8753 92.0286 18.3691 93.8955 11.855C94.4717 9.8446 95.0481 7.83341 95.6182 5.81945C95.7449 5.37417 96.1245 5.06062 96.57 5.03426L100.221 4.82611C100.963 4.78396 101.512 5.52962 101.279 6.26474C99.8208 10.8388 98.2967 15.7106 96.8487 20.4006C96.5448 21.3887 97.603 22.2107 98.4386 21.6416C99.8791 20.6562 101.545 20.0027 103.158 19.9105C107.267 19.676 110.064 23.0565 110.332 28.1496C110.347 28.4184 110.363 28.7082 110.37 29.0032C110.385 29.5673 110.808 30.023 111.348 30.0704C113.282 30.2417 115.259 29.6673 116.786 28.3051C116.943 28.1654 117.049 27.9757 117.102 27.7701C118.616 21.8916 120.287 16.0568 121.959 10.2147C122.532 8.21455 123.105 6.21353 123.672 4.20956C123.798 3.76427 124.178 3.45072 124.624 3.42438L128.274 3.21623C129.016 3.17408 129.566 3.91972 129.333 4.65484C127.874 9.22892 126.35 14.1007 124.902 18.7907C124.598 19.7788 125.657 20.6008 126.492 20.0317C127.933 19.0463 129.599 18.3929 131.211 18.3006C135.32 18.0662 138.117 21.4466 138.386 26.5399C138.401 26.8084 138.416 27.0985 138.424 27.3935C138.436 27.9573 138.862 28.4132 139.401 28.4607C141.335 28.6318 143.312 28.0573 144.839 26.6951C144.996 26.5557 145.102 26.3659 145.156 26.1604C146.67 20.2818 148.34 14.4471 150.013 8.6051C150.586 6.60484 151.158 4.60372 151.725 2.59968C151.852 2.15439 152.232 1.84085 152.677 1.8145L156.328 1.60635C157.07 1.56419 157.619 2.30985 157.386 3.04497C155.928 7.61902 154.404 12.4908 152.956 17.1808C152.652 18.1689 153.71 18.991 154.546 18.4219C155.986 17.4364 157.652 16.783 159.265 16.6908C163.374 16.4563 166.171 19.8367 166.44 24.9299C166.455 25.2013 166.47 25.4885 166.477 25.7835C166.493 26.3447 166.913 26.8032 167.452 26.8507C169.323 27.0166 171.237 26.4844 172.741 25.2171C172.908 25.0774 173.024 24.8798 173.08 24.6637C174.804 18.0187 177.336 9.31324 179.777 0.981894C179.906 0.541877 180.285 0.236236 180.726 0.209888L184.344 0.0017367C185.078 -0.0404207 185.627 0.692063 185.407 1.42191C182.047 12.5778 179.308 22.3372 177.797 28.0944C175.789 35.9039 175.711 38.1567 177.994 38.025C179.911 37.9143 182.493 35.1952 184.928 31.0847C185.025 30.924 185.075 30.7397 185.083 30.5526C185.402 22.324 190.447 14.8385 197.946 14.409C202.969 14.1218 205.721 17.916 205.918 21.6495C206.293 28.7767 199.248 33.3324 192.42 32.9107C191.625 32.8606 191.047 33.7145 191.397 34.4574C192.351 36.4967 194.359 37.6352 197.787 37.4374C201.048 37.2531 204.468 34.439 206.622 31.928ZM93.7548 33.9278C92.1345 40.4228 94.1017 42.9652 96.646 42.8203C100.823 42.5805 104.864 34.9263 104.553 29.019C104.416 26.4396 102.907 25.0958 101.145 25.1961C98.2106 25.3646 95.0512 28.745 93.7548 33.9278ZM121.808 32.3207C120.188 38.8154 122.155 41.3581 124.7 41.2131H124.697C128.874 40.9734 132.917 33.3192 132.606 27.4119C132.472 24.8324 130.96 23.4886 129.198 23.5887C126.264 23.7574 123.105 27.1379 121.808 32.3207ZM149.862 30.7133C148.242 37.2082 150.209 39.7509 152.753 39.606H152.751C156.925 39.3662 160.971 31.712 160.66 25.8047C160.525 23.2251 159.014 21.8814 157.252 21.9815C154.318 22.1501 151.158 25.5307 149.862 30.7133ZM200.584 22.2239C200.559 20.5218 199.513 19.2887 197.817 19.3862H197.815C194.483 19.5785 191.875 23.1856 191.045 27.562C190.913 28.2577 191.422 28.9058 192.103 28.8899C196.407 28.7821 200.721 25.9416 200.584 22.2239ZM44.3525 25.3837C43.9171 12.1962 35.3423 3.49339 22.6712 3.94658C17.2307 4.19426 11.0052 6.25733 6.32164 9.9461C5.88113 10.2939 5.76719 10.9315 6.06593 11.4163L8.05331 14.6519C8.39254 15.2052 9.11407 15.3185 9.60776 14.9075C13.1724 11.9459 18.0383 10.0041 22.7193 9.79855C31.403 9.43757 37.7828 14.9971 38.1551 25.7367C38.6209 38.2417 30.2157 52.5461 16.7091 53.3207C16.2382 53.3471 15.7471 53.3577 15.2559 53.3577C14.5673 53.3577 14.0585 52.6858 14.2306 51.9901C16.8357 41.4744 19.8763 30.1974 22.9776 19.7029C23.1928 18.973 22.6459 18.2458 21.9143 18.288L17.9648 18.5146C17.5218 18.5409 17.142 18.8492 17.0129 19.2918C14.0331 29.6045 11.0508 40.7895 8.36723 51.284C8.21279 51.89 7.59761 52.2379 7.02544 52.0427C5.62543 51.566 4.34693 51.0232 3.2583 50.3881C2.73677 50.0825 2.07601 50.2987 1.80765 50.8571L0.11142 54.4037C-0.139216 54.9281 0.0455967 55.5709 0.539275 55.8527C4.38489 58.0345 10.223 59.2806 16.0914 58.9462C35.4032 57.8393 44.864 40.0015 44.3525 25.3889V25.3837ZM82.3044 9.18082C79.955 9.31518 77.8713 11.9553 78.0183 14.7377C78.1143 16.5715 79.2917 17.7967 81.1195 17.694C83.4689 17.5596 85.6106 14.7798 85.4714 12.1318C85.3754 10.298 84.0005 9.08333 82.3044 9.18082Z"
+                        fill="currentColor"></path>
+                </svg></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 Main-Nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown1" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Explore
+                        </a>
+                        <ul class=" dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item py-2 fw-bold" href="#">Popular</a></li>
+                            <li><a class="dropdown-item py-2 fw-bold" href="#">New and Noteworthy</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item py-2" href="#">Product Design</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Web Design</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Animation</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Branding</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Illustration</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Mobile</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Typography</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Print</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown2" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Hire Talent
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="#">
+                                    <div class="container">
+                                        <span class="fw-bold d-block py-2">Start Project Brief</span>
+                                        <span class="d-block pb-2 text">Get recommendations and proposals</span>
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <div class="container">
+                                        <span class="fw-bold d-block py-2">Browse Profiles</span>
+                                        <span class="d-block pb-2">Find and message talent directly </span>
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <div class="container">
+                                        <span class="fw-bold d-block py-2">Explore Services</span>
+                                        <span class="d-block pb-2">Hire Quickly with Prepackaged Services</span>
+                                    </div>
+                                </a></li>
+                            <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Learn more about how hiring works on Dribbble</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown3" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Get Hired
+                    </a>
+                    <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown3">
+                        <li><a class="dropdown-item" href="#">
+                                <div class="container">
+                                    <span class="fw-bold d-block py-2">Browse Project Briefs</span>
+                                    <span class="d-block pb-2 text">Send proposals to clients</span>
+                                </div>
+                            </a></li>
+                        <li><a class="dropdown-item" href="#">
+                                <div class="container">
+                                    <span class="fw-bold d-block py-2">Add a Service</span>
+                                    <span class="d-block pb-2 text">Let clients discover and purchase your
+                                        services</span>
+                                </div>
+                            </a></li>
+                        <li><a class="dropdown-item" href="#">
+                                <div class="container">
+                                    <span class="fw-bold d-block py-2">Apply to Full-Time Jobs</span>
+                                    <span class="d-block pb-2 text">View open design roles</span>
+                                </div>
+                            </a></li>
+                        <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Learn more about how hiring works on Dribbble</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown4" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Community
+                    </a>
+                    <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown4">
+                        <li><a class="dropdown-item" href="#">
+                                <div class="container">
+                                    <span class="fw-bold d-block py-2">Blog</span>
+                                    <span class="d-block pb-2 text">Design inspiration, stories, and tips</span>
+                                </div>
+                            </a></li>
+                        <li><a class="dropdown-item" href="#">
+                                <div class="container">
+                                    <span class="fw-bold d-block py-2">Playoffs</span>
+                                    <span class="d-block pb-2 text">Join creative challenges and show your skills</span>
+                                </div>
+                            </a></li>
+                        <li><a class="dropdown-item" href="#">
+                                <div class="container">
+                                    <span class="fw-bold d-block py-2">Help-Center</span>
+                                    <span class="d-block pb-2 text">Get quick answers and learn how to use
+                                        Dribbble</span>
+                                </div>
+                            </a></li>
+                        <hr class="dropdown-divider">
+                </li>
+                <li class="dropdown-item">Follow Us<a class="dropdown-item" href="#"></a></li>
+                </ul>
+                </li>
+                </ul>
+
+                <button class="btn btn-outline-none rounded-pill" type="button">Sign Up</button>
+                <button class="btn btn-dark rounded-pill px-3 py-2" type="button">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="hero-section" class="container-fluid col-xxl-8 px-4 justify-content-between">
+        <div class="row flex-lg-row-reverse align-items-center g-5 pb-5">
+            <div class="col-10 col-sm-8 col-lg-5">
+                <video src="../Project/Videos/Hero-section.mp4" class="d-block mx-lg-auto img-fluid" id="hero-video"
+                    alt="Bootstrap Themes" width="700" height="500" loading="lazy" autoplay loop muted></video>
+                <button type="button" id="hero-video-btn" class="btn btn-dark mb-3 me-3"><i
+                        class="fa-solid fa-pause"></i></button>
+            </div>
+            <div class="col-lg-7 container">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Discover the
+                    <span class="d-block">World's Top</span>
+                    Designers
+                </h1>
+                <p>Explore work from the most talented and accomplished <span class="d-block">designers ready to take on
+                        your next project.</span></p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start pt-3">
+                    <button type="button" class="btn btn-dark px-3 me-md-2 rounded-pill fs-6"><i
+                            class="fa-regular fa-image"></i> Shots</button>
+                    <button type="button" class="btn btn-outline-none px-3 rounded-pill fs-6"><i
+                            class="fa-solid fa-user-group"></i> Designers</button>
+                    <button type="button" class="btn btn-outline-none px-3 rounded-pill fs-6"><i
+                            class="fa-solid fa-clipboard-list"></i> Services</button>
+                </div>
+                <div class="bg-white">
+                    <div class="container py-3">
+                        <div class="search-wrapper">
+                            <div class="search-box">
+                                <input type="text" class="search-input form-control"
+                                    placeholder="What type of Design are you interested in?">
+                                <i class="fas fa-search search-icon" style="color: #ffffff;"></i>
+
+                                <!-- <div class="suggestions">
+                                    <div class="recent-searches">Recent Searches</div>
+                                    <div class="suggestion-item">
+                                        <i class="fas fa-history"></i>
+                                        Wireless Headphones
+                                    </div>
+                                    <div class="suggestion-item">
+                                        <i class="fas fa-history"></i>
+                                        Smart Watches
+                                    </div>
+                                    <div class="suggestion-item">
+                                        <i class="fas fa-search"></i>
+                                        Popular: Latest Smartphones
+                                    </div>
+                                    <div class="suggestion-item">
+                                        <i class="fas fa-fire"></i>
+                                        Trending: Fitness Trackers
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-scroll">
+                    <span class="fw-bold">Popular: </span>
+                    <a href="#" class="rounded-pill px-3 mx-1 btn btn-sm btn-outline-secondary text-dark text-decoration-none">
+                        dashboard</a>
+                    <a href="#" class="rounded-pill px-3 mx-1 btn btn-sm btn-outline-secondary text-dark text-decoration-none">
+                        landing page</a>
+                    <a href="#" class="rounded-pill px-3 mx-1 btn btn-sm btn-outline-secondary text-dark text-decoration-none">
+                        e-commerce</a>
+                    <a href="#" class="rounded-pill px-3 mx-1 btn btn-sm btn-outline-secondary text-dark text-decoration-none">
+                        logo</a>
+                    <a href="#" class="rounded-pill px-3 mx-1 btn btn-sm btn-outline-secondary text-dark text-decoration-none">
+                        card</a>
+                    <a href="#" class="rounded-pill px-3 mx-1 btn btn-sm btn-outline-secondary text-dark text-decoration-none">
+                        icons</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card container-fluid" id="promo-banner">
+        <div class="card-body">
+            <span id="promo-text" class="fw-bold border border-secondary px-4 py-2 rounded-pill text-dark"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-stars"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                </svg> Start a Project Brief</span><span class="badge rounded-pill" id="badge">NEW</span>Tell us what
+            you need and instantly connect with world-class talent ready to work on your project.
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg py-3 rounded" aria-label="Thirteenth navbar example">
+        <div class="container-fluid"> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false"
+                aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse d-lg-flex dropdown " id="navbarsExample11"> 
+                <div class="navbar-collapse d-lg-flex dropdown"><a
+                    class="nav-link dropdown-toggle border border-secondary rounded px-3 py-2" href="#"
+                    data-bs-toggle="dropdown" aria-expanded="false">Popular</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Popular</a></li>
+                    <li><a class="dropdown-item" href="#">New & Noteworthy</a></li>
+                </ul></div>
+                <ul class="navbar-nav col-lg-7 justify-content-center" id="item">
+                    <li class="nav-item"> <a class="nav-link px-2 align-self-center" aria-current="page" href="#">Discover</a> </li>
+                    <li class="nav-item"> <a class="nav-link px-2 align-self-center" href="#">Animation</a> </li>
+                    <li class="nav-item"> <a class="nav-link px-2 align-self-center" href="#">Branding</a> </li>
+                    <li class="nav-item"> <a class="nav-link px-2 align-self-center" href="#">Illustration</a> </li>
+                    <li class="nav-item"> <a class="nav-link px-2 align-self-center" href="#">Mobile</a> </li>
+                    <li class="nav-item"> <a class="nav-link px-2 align-self-center" href="#">Print</a> </li>
+                    <li class="nav-item"> <a class="nav-link px-2 align-self-center" href="#">Product Design</a> </li>
+                    <li class="nav-item"> <a class="nav-link px-2 align-self-center" href="#">Typography</a> </li>
+                    <li class="nav-item"> <a class="nav-link px-2 align-self-center" href="#">Web Design</a> </li>
+                </ul>
+                <div class="d-lg-flex col-lg-2 justify-content-lg-end" id="Filters"> <button
+                        class="btn btn-white btn-outline-secondary text-dark rounded-pill"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-filter" viewBox="0 0 16 16">
+                            <path
+                                d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+                        </svg> Filters</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+
+        <ol class="gallery">
+            <li>
+                <figure>
+                    <video src="../Project/Videos/main1.mp4" alt="Gallery image 1"></video>
+                    <figcaption class="d-flex justify-content-between">
+                        <div class="d-flex"><img src="../Project/Videos/emote.webp" alt=""
+                                style="height: 18px;width: 18px;"><span class="fw-bold float-start">Emote</span><span
+                                class="badge team-badge">TEAM</span></div>
+                        <div><span class="px-2"><i class="fa-solid fa-heart"></i>120</span><i
+                                class="fa-solid fa-eye"></i>4.7k</div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../Project/Videos/main2.webp" alt="Gallery image 2">
+                    <figcaption class="d-flex justify-content-between">
+                        <div class="d-flex"><img class="mx-1" src="../Project/Videos/Wegrow.webp" alt=""
+                                style="height: 18px;width: 18px;"><span class="fw-bold float-start">Wegrow</span><span
+                                class="badge team-badge">TEAM</span></div>
+                        <div><span class="px-2"><i class="fa-solid fa-heart"></i>42</span><i
+                                class="fa-solid fa-eye"></i>3k</div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../Project/Videos/main3.webp" alt="Gallery image 3">
+                    <figcaption class="d-flex justify-content-between">
+                        <div class="d-flex"><img class="mx-1" src="../Project/Videos/Afterglow.webp" alt=""
+                                style="height: 18px;width: 18px;"><span
+                                class="fw-bold float-start">Afterglow</span><span class="badge team-badge">TEAM</span>
+                        </div>
+                        <div><span class="px-2"><i class="fa-solid fa-heart"></i>64</span><i
+                                class="fa-solid fa-eye"></i>4.8k</div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../Project/Videos/main4.webp" alt="Gallery image 4">
+                    <figcaption class="d-flex justify-content-between">
+                        <div class="d-flex"><img class="mx-1" src="../Project/Videos/Outcrowd.webp" alt=""
+                                style="height: 18px;width: 18px;"><span class="fw-bold float-start">Outcrowd</span><span
+                                class="badge team-badge">PRO</span></div>
+                        <div><span class="px-2"><i class="fa-solid fa-heart"></i>102</span><i
+                                class="fa-solid fa-eye"></i>3.7k</div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../Project/Videos/main5.webp" alt="Gallery image 5">
+                    <figcaption class="d-flex justify-content-between">
+                        <div class="d-flex"><img class="mx-1" src="../Project/Videos/Alex Tass.webp" alt=""
+                                style="height: 1rem;width: 1.2rem"><span class="fw-bold float-start">Alex Tass, Logo
+                                designer</span><span class="badge team-badge">PRO</span></div>
+                        <div><span class="px-2"><i class="fa-solid fa-heart"></i>37</span><i
+                                class="fa-solid fa-eye"></i>2.3k</div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <video src="../Project/Videos/main6.mp4" alt="Gallery image 6"></video>
+                    <figcaption class="d-flex justify-content-between">
+                        <div class="d-flex"><img class="mx-1" src="../Project/Videos/Layo.webp" alt=""
+                                style="height: 18px;width: 18px;"><span class="fw-bold float-start">Layo</span><span
+                                class="badge team-badge">PRO</span></div>
+                        <div><span class="px-2"><i class="fa-solid fa-heart"></i>75</span><i
+                                class="fa-solid fa-eye"></i>2.7k</div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../Project/Videos/main7.webp" alt="Gallery image 7">
+                    <figcaption class="d-flex justify-content-between">
+                        <div class="d-flex"><img class="mx-1" src="../Project/Videos/strangehelix.webp" alt=""
+                                style="height: 18px;width: 18px;"><span
+                                class="fw-bold float-start">strangehelix</span><span class="badge team-badge">PRO</span>
+                        </div>
+                        <div><span class="px-2"><i class="fa-solid fa-heart"></i>85</span><i
+                                class="fa-solid fa-eye"></i>3.8k</div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../Project/Videos/main8.webp" alt="Gallery image 8">
+                    <figcaption class="d-flex justify-content-between">
+                        <div class="d-flex"><img class="mx-1" src="../Project/Videos/Korsa.webp" alt=""
+                                style="height: 18px;width: 18px;"><span class="fw-bold float-start">Korsa</span><span
+                                class="badge team-badge">TEAM</span></div>
+                        <div><span class="px-2"><i class="fa-solid fa-heart"></i>201</span><i
+                                class="fa-solid fa-eye"></i>9.6k</div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../Project/Videos/main9.webp" alt="Gallery image 9">
+                    <figcaption class="d-flex justify-content-between">
+                        <div class="d-flex"><img class="mx-1" src="../Project/Videos/Vadim Carazan.webp" alt=""
+                                style="height: 18px;width: 18px;"><span class="fw-bold float-start">Vadim
+                                Carazan</span><span class="badge team-badge">PRO</span></div>
+                        <div><span class="px-2"><i class="fa-solid fa-heart"></i>29</span><i
+                                class="fa-solid fa-eye"></i>1.4k</div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../Project/Videos/main10.webp" alt="Gallery image 10">
+                    <figcaption class="d-flex justify-content-between">
+                        <div class="d-flex"><img class="mx-1" src="../Project/Videos/Zikospace.webp" alt=""
+                                style="height: 18px;width: 18px;"><span
+                                class="fw-bold float-start">Zikospace</span><span class="badge team-badge">PRO</span>
+                        </div>
+                        <div><span class="px-2"><i class="fa-solid fa-heart"></i>90</span><i
+                                class="fa-solid fa-eye"></i>5k</div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../Project/Videos/main11.webp" alt="Gallery image 11">
+                    <figcaption class="d-flex justify-content-between">
+                        <div class="d-flex"><img class="mx-1" src="../Project/Videos/Rw Studio.webp" alt=""
+                                style="height: 18px;width: 18px;"><span class="fw-bold float-start">Rw
+                                Studio</span><span class="badge team-badge">PRO</span></div>
+                        <div><span class="px-2"><i class="fa-solid fa-heart"></i>21</span><i
+                                class="fa-solid fa-eye"></i>1.1k</div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../Project/Videos/main12.webp" alt="Gallery image 12">
+                    <figcaption class="d-flex justify-content-between">
+                        <div class="d-flex"><img class="mx-1" src="../Project/Videos/Panze-UX design Studio.webp" alt=""
+                                style="height: 18px;width: 18px;"><span class="fw-bold float-start">Panze-UX design
+                                Studio</span><span class="badge team-badge">TEAM</span></div>
+                        <div><span class="px-2"><i class="fa-solid fa-heart"></i>81</span><i
+                                class="fa-solid fa-eye"></i>2k</div>
+                    </figcaption>
+                </figure>
+            </li>
+
+        </ol>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center py-4">
+        <a href="#" class="btn btn-dark rounded-pill px-3 py-2">Sign up to continue</a>
+    </div>
+
+    <div class="scroll-container">
+        <div class="scroll-container_track">
+            <div class="scroll-container-grid">
+                <a href="/shots/popular/mobile" class="site-footer-marquee-item " style="--i:0">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Mobile" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Mobile.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Mobile</div>
+                </a>
+                <a href="/shots/popular/Illustration" class="site-footer-marquee-item " style="--i:1">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Illustration" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Illustration.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Illustration</div>
+                </a>
+                <a href="/shots/popular/Branding" class="site-footer-marquee-item " style="--i:2">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Branding" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Branding.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Branding</div>
+                </a>
+                <a href="/shots/popular/Animation" class="site-footer-marquee-item " style="--i:3">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Animation" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Animation.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Animation</div>
+                </a>
+                <a href="/shots/popular/Typography" class="site-footer-marquee-item " style="--i:4">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Typography" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Typography.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Typography</div>
+                </a>
+                <a href="/shots/popular/Web Design" class="site-footer-marquee-item " style="--i:5">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Web Design" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Web Design.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Web Design</div>
+                </a>
+                <a href="/shots/popular/Product Design" class="site-footer-marquee-item " style="--i:6">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Product Design" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Product Design.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Product Design</div>
+                </a>
+                <a href="/shots/popular/Print" class="site-footer-marquee-item " style="--i:7">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Print" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Print.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Print</div>
+                </a>
+                <a href="/shots/popular/mobile" class="site-footer-marquee-item " style="--i:0">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Mobile" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Mobile.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Mobile</div>
+                </a>
+                <a href="/shots/popular/Illustration" class="site-footer-marquee-item " style="--i:1">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Illustration" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Illustration.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Illustration</div>
+                </a>
+                <a href="/shots/popular/Branding" class="site-footer-marquee-item " style="--i:2">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Branding" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Branding.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Branding</div>
+                </a>
+                <a href="/shots/popular/Animation" class="site-footer-marquee-item " style="--i:3">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Animation" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Animation.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Animation</div>
+                </a>
+                <a href="/shots/popular/Typography" class="site-footer-marquee-item " style="--i:4">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Typography" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Typography.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Typography</div>
+                </a>
+                <a href="/shots/popular/Web Design" class="site-footer-marquee-item " style="--i:5">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Web Design" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Web Design.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Web Design</div>
+                </a>
+                <a href="/shots/popular/Product Design" class="site-footer-marquee-item " style="--i:6">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Product Design" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Product Design.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Product Design</div>
+                </a>
+                <a href="/shots/popular/Print" class="site-footer-marquee-item " style="--i:7">
+                    <div class="site-footer-marquee-item__stack"></div>
+                    <div class="site-footer-marquee-item__media">
+                        <img alt="Print" width="200" height="150" class="lazyautosizes lazyloaded"
+                            src="../Project/Videos/Print.webp">
+                    </div>
+
+                    <div class="site-footer-marquee-item__title">Print</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer container mt-5 pt-4">
+        <div class="upper_footer d-flex justify-content-between py-4">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="76" height="30" viewBox="0 0 210 59" fill="none">
+                    <title>Dribbble: the community for graphic design</title>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M206.622 31.928C207.065 31.4116 207.85 31.4352 208.253 31.986H208.25L209.784 34.0834C210.075 34.4864 210.073 35.0425 209.769 35.4349C207.106 38.8893 202.44 42.2143 196.81 42.5359C192.366 42.7887 188.701 41.1051 186.706 37.9221C186.311 37.2925 185.44 37.2557 184.997 37.8511C182.63 41.0286 179.766 43.5134 176.782 43.6845C171.467 43.9876 169.966 40.4228 171.28 32.563C171.412 31.7805 170.726 31.1192 169.987 31.3141C168.885 31.6065 167.715 31.7356 166.528 31.633C166.034 31.5907 165.571 31.8912 165.422 32.3811C163.455 38.8418 158.774 44.8518 152.715 45.1997C148.847 45.421 143.069 43.205 143.647 33.9462C143.695 33.1927 143.019 32.5999 142.323 32.8106C141.11 33.1795 139.804 33.3534 138.474 33.2401C137.981 33.1979 137.52 33.4983 137.371 33.9885C135.404 40.449 130.723 46.4592 124.664 46.8068C120.796 47.0282 115.018 44.8124 115.596 35.5536C115.644 34.7998 114.968 34.207 114.272 34.418C113.059 34.7869 111.753 34.9634 110.423 34.8473C109.93 34.8053 109.469 35.1057 109.32 35.5956C107.352 42.0564 102.672 48.0664 96.6132 48.4142C93.8613 48.5723 90.1398 47.4945 88.4308 43.5264C88.1016 42.7599 87.1144 42.6438 86.6257 43.3105C84.2334 46.5751 81.3193 49.152 78.2762 49.3259C75.1571 49.505 73.4509 48.2535 72.7091 46.0216C72.4458 45.2339 71.4609 45.0467 70.9293 45.6712C68.8002 48.1744 66.3749 50.0082 63.9216 50.1479C60.1393 50.3666 57.9619 47.563 57.7823 44.1667C57.5747 40.204 59.2887 35.564 61.2025 30.4999C61.4684 29.7964 60.9873 29.0348 60.2608 29.0032C59.157 28.956 57.8963 28.8399 56.7113 28.6185C56.1771 28.5159 55.6583 28.8479 55.5063 29.3907C53.243 37.4716 49.7771 45.392 46.8529 50.074C46.5263 50.5984 45.8505 50.7381 45.3593 50.377L43.1264 48.7331C42.6682 48.393 42.5441 47.7397 42.8504 47.247C47.0759 40.478 50.8278 29.8807 52.1215 22.0421C52.2025 21.5415 52.61 21.17 53.0986 21.141L56.0683 20.9697C56.7493 20.9302 57.2861 21.5652 57.162 22.2634L57.1493 22.3372C57.0379 22.959 57.4532 23.5439 58.0532 23.6257C60.7164 23.992 64.6963 24.0366 67.3975 23.9313C68.157 23.9023 68.6938 24.6875 68.4178 25.4226C66.2507 31.1876 63.3469 39.1765 63.5139 42.3382C63.5899 43.7662 64.2204 44.5462 65.3291 44.4829C67.4508 44.3619 70.7141 40.0959 73.1876 35.3455C73.2331 35.261 73.2659 35.169 73.2862 35.0741C74.1196 31.3543 75.3565 27.2068 76.6061 23.0163L76.6837 22.7561C76.8128 22.3188 77.1901 22.0131 77.6306 21.9868L81.1876 21.7839C81.9219 21.7417 82.4712 22.4795 82.2485 23.2093C82.0654 23.8112 81.883 24.409 81.7023 25.0014C78.5723 35.2603 75.9438 43.8759 79.4838 43.6742C81.7978 43.5422 85.0764 39.6164 87.8966 34.0279C87.9421 33.9356 87.9751 33.8381 87.9954 33.7355C88.1372 33.0055 88.3092 32.2416 88.5195 31.4432C90.1639 24.8753 92.0286 18.3691 93.8955 11.855C94.4717 9.8446 95.0481 7.83341 95.6182 5.81945C95.7449 5.37417 96.1245 5.06062 96.57 5.03426L100.221 4.82611C100.963 4.78396 101.512 5.52962 101.279 6.26474C99.8208 10.8388 98.2967 15.7106 96.8487 20.4006C96.5448 21.3887 97.603 22.2107 98.4386 21.6416C99.8791 20.6562 101.545 20.0027 103.158 19.9105C107.267 19.676 110.064 23.0565 110.332 28.1496C110.347 28.4184 110.363 28.7082 110.37 29.0032C110.385 29.5673 110.808 30.023 111.348 30.0704C113.282 30.2417 115.259 29.6673 116.786 28.3051C116.943 28.1654 117.049 27.9757 117.102 27.7701C118.616 21.8916 120.287 16.0568 121.959 10.2147C122.532 8.21455 123.105 6.21353 123.672 4.20956C123.798 3.76427 124.178 3.45072 124.624 3.42438L128.274 3.21623C129.016 3.17408 129.566 3.91972 129.333 4.65484C127.874 9.22892 126.35 14.1007 124.902 18.7907C124.598 19.7788 125.657 20.6008 126.492 20.0317C127.933 19.0463 129.599 18.3929 131.211 18.3006C135.32 18.0662 138.117 21.4466 138.386 26.5399C138.401 26.8084 138.416 27.0985 138.424 27.3935C138.436 27.9573 138.862 28.4132 139.401 28.4607C141.335 28.6318 143.312 28.0573 144.839 26.6951C144.996 26.5557 145.102 26.3659 145.156 26.1604C146.67 20.2818 148.34 14.4471 150.013 8.6051C150.586 6.60484 151.158 4.60372 151.725 2.59968C151.852 2.15439 152.232 1.84085 152.677 1.8145L156.328 1.60635C157.07 1.56419 157.619 2.30985 157.386 3.04497C155.928 7.61902 154.404 12.4908 152.956 17.1808C152.652 18.1689 153.71 18.991 154.546 18.4219C155.986 17.4364 157.652 16.783 159.265 16.6908C163.374 16.4563 166.171 19.8367 166.44 24.9299C166.455 25.2013 166.47 25.4885 166.477 25.7835C166.493 26.3447 166.913 26.8032 167.452 26.8507C169.323 27.0166 171.237 26.4844 172.741 25.2171C172.908 25.0774 173.024 24.8798 173.08 24.6637C174.804 18.0187 177.336 9.31324 179.777 0.981894C179.906 0.541877 180.285 0.236236 180.726 0.209888L184.344 0.0017367C185.078 -0.0404207 185.627 0.692063 185.407 1.42191C182.047 12.5778 179.308 22.3372 177.797 28.0944C175.789 35.9039 175.711 38.1567 177.994 38.025C179.911 37.9143 182.493 35.1952 184.928 31.0847C185.025 30.924 185.075 30.7397 185.083 30.5526C185.402 22.324 190.447 14.8385 197.946 14.409C202.969 14.1218 205.721 17.916 205.918 21.6495C206.293 28.7767 199.248 33.3324 192.42 32.9107C191.625 32.8606 191.047 33.7145 191.397 34.4574C192.351 36.4967 194.359 37.6352 197.787 37.4374C201.048 37.2531 204.468 34.439 206.622 31.928ZM93.7548 33.9278C92.1345 40.4228 94.1017 42.9652 96.646 42.8203C100.823 42.5805 104.864 34.9263 104.553 29.019C104.416 26.4396 102.907 25.0958 101.145 25.1961C98.2106 25.3646 95.0512 28.745 93.7548 33.9278ZM121.808 32.3207C120.188 38.8154 122.155 41.3581 124.7 41.2131H124.697C128.874 40.9734 132.917 33.3192 132.606 27.4119C132.472 24.8324 130.96 23.4886 129.198 23.5887C126.264 23.7574 123.105 27.1379 121.808 32.3207ZM149.862 30.7133C148.242 37.2082 150.209 39.7509 152.753 39.606H152.751C156.925 39.3662 160.971 31.712 160.66 25.8047C160.525 23.2251 159.014 21.8814 157.252 21.9815C154.318 22.1501 151.158 25.5307 149.862 30.7133ZM200.584 22.2239C200.559 20.5218 199.513 19.2887 197.817 19.3862H197.815C194.483 19.5785 191.875 23.1856 191.045 27.562C190.913 28.2577 191.422 28.9058 192.103 28.8899C196.407 28.7821 200.721 25.9416 200.584 22.2239ZM44.3525 25.3837C43.9171 12.1962 35.3423 3.49339 22.6712 3.94658C17.2307 4.19426 11.0052 6.25733 6.32164 9.9461C5.88113 10.2939 5.76719 10.9315 6.06593 11.4163L8.05331 14.6519C8.39254 15.2052 9.11407 15.3185 9.60776 14.9075C13.1724 11.9459 18.0383 10.0041 22.7193 9.79855C31.403 9.43757 37.7828 14.9971 38.1551 25.7367C38.6209 38.2417 30.2157 52.5461 16.7091 53.3207C16.2382 53.3471 15.7471 53.3577 15.2559 53.3577C14.5673 53.3577 14.0585 52.6858 14.2306 51.9901C16.8357 41.4744 19.8763 30.1974 22.9776 19.7029C23.1928 18.973 22.6459 18.2458 21.9143 18.288L17.9648 18.5146C17.5218 18.5409 17.142 18.8492 17.0129 19.2918C14.0331 29.6045 11.0508 40.7895 8.36723 51.284C8.21279 51.89 7.59761 52.2379 7.02544 52.0427C5.62543 51.566 4.34693 51.0232 3.2583 50.3881C2.73677 50.0825 2.07601 50.2987 1.80765 50.8571L0.11142 54.4037C-0.139216 54.9281 0.0455967 55.5709 0.539275 55.8527C4.38489 58.0345 10.223 59.2806 16.0914 58.9462C35.4032 57.8393 44.864 40.0015 44.3525 25.3889V25.3837ZM82.3044 9.18082C79.955 9.31518 77.8713 11.9553 78.0183 14.7377C78.1143 16.5715 79.2917 17.7967 81.1195 17.694C83.4689 17.5596 85.6106 14.7798 85.4714 12.1318C85.3754 10.298 84.0005 9.08333 82.3044 9.18082Z"
+                        fill="currentColor"></path>
+                </svg></a>
+            <ul class="d-flex flex-wrap text-decoration-none">
+                <li><a class="site-footer__link px-2" href="/for-designers">For designers</a></li>
+                <li><a class="site-footer__link px-2" href="/hiring">Hire talent</a></li>
+                <li><a class="site-footer__link px-2" href="/shots/popular">Inspiration</a></li>
+                <li><a class="site-footer__link px-2" href="/advertise">Advertising</a></li>
+                <li><a class="site-footer__link px-2" href="/stories">Blog</a></li>
+                <li><a class="site-footer__link px-2" href="/about">About</a></li>
+                <li><a class="site-footer__link px-2" href="/careers">Careers</a></li>
+                <li><a class="site-footer__link px-2" href="/contact">Support</a></li>
+            </ul>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="text-decoration-none text-dark"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="text-decoration-none text-dark mx-3"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="text-decoration-none text-dark"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-decoration-none text-dark mx-3"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="lower_footer d-flex justify-content-between py-4 ">
+            <ul class="d-flex text-decoration-none float-start">
+                <li class="px-2">© 2026 Dribbble</li>
+                <li class="px-2"><a href="/terms">Terms</a></li>
+                <li class="px-2"><a href="/privacy">Privacy</a></li>
+                <li class="px-2"><a href="/cookie-policy">Cookies</a></li>
+            </ul>
+            <ul class="d-flex text-decoration-none">
+                <li class="px-2"><a href="/directories/jobs">Jobs</a></li>
+                <li class="px-2"><a href="/directories/designers">Designers</a></li>
+                <li class="px-2"><a href="/directories/freelance-designers">Freelancers</a></li>
+                <li class="px-2"><a href="/tags">Tags</a></li>
+                <li class="px-2"><a href="/places">Places</a></li>
+                <li class="px-2"><a href="/resources">Resources</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

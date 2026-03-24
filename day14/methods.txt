@@ -1,0 +1,17 @@
+Property:
+length
+
+Mutating:
+push, pop, shift, unshift, splice, sort, reverse
+
+Non-mutating:
+map, filter, slice, concat, flat
+
+Search:
+find, includes, indexOf
+
+Iteration:
+forEach, reduce
+
+Utility:
+join, at, keys, values
